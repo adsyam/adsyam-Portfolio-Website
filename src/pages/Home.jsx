@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       <div className="mt-[-20px] grid grid-cols-2">
         <img
+          loading="lazy"
           src={HomeAnimation}
           alt="Home Page Animation"
           className="m-auto h-screen"
@@ -15,7 +16,11 @@ export default function Home() {
           <p className="text-4xl font-bold">Adrianne Yambao</p>
           <TypeAnimation
             sequence={["A Full-Stack Web Developer.", 1000]}
-            style={{ fontSize: "1.875rem", lineHeight: "2.25rem", letterSpacing: "0.1em" }}
+            style={{
+              fontSize: "1.875rem",
+              lineHeight: "2.25rem",
+              letterSpacing: "0.1em",
+            }}
             speed={30}
             repeat={Infinity}
           />

@@ -5,6 +5,7 @@ import {
   Bootstrap,
   CSS,
   Figma,
+  Firebase,
   Framer,
   Git,
   Github,
@@ -17,6 +18,7 @@ import {
   React_Query,
   Redux,
   Styled,
+  Supabase,
   Tailwind,
   TypeScript,
 } from "../../../assets/stacks";
@@ -62,6 +64,14 @@ const techstackArr = [
     name: "MySQL",
     logo: Mysql,
   },
+  {
+    name: "Firebase",
+    logo: Firebase,
+  },
+  {
+    name: "Supabase",
+    logo: Supabase,
+  },
 ];
 
 const toolsArr = [
@@ -106,6 +116,11 @@ export default function AboutLogos() {
         {toolsArr.map((tech, i) => (
           <motion.div
             whileHover={{ scale: 1.02 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 10,
+            }}
             onMouseEnter={() => setHoveredLogo(i)}
             onMouseLeave={() => setHoveredLogo(null)}
             key={i}
@@ -113,7 +128,12 @@ export default function AboutLogos() {
               hoveredLogo === i ? "logo" : ""
             } flex items-center gap-2 rounded-lg border-2 border-purple-300/50 px-4 py-2 text-sm`}
           >
-            <img src={tech.logo} alt={tech.name} className="w-12" />
+            <img
+              loading="lazy"
+              src={tech.logo}
+              alt={tech.name}
+              className="w-12"
+            />
             <p>{tech.name}</p>
           </motion.div>
         ))}
@@ -125,6 +145,11 @@ export default function AboutLogos() {
       {techstackArr.map((tech, i) => (
         <motion.div
           whileHover={{ scale: 1.02 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 10,
+          }}
           onMouseEnter={() => setHoveredLogo(i)}
           onMouseLeave={() => setHoveredLogo(null)}
           key={i}
@@ -132,7 +157,12 @@ export default function AboutLogos() {
             hoveredLogo === i ? "logo" : ""
           } flex items-center gap-2 rounded-lg border-2 border-purple-300/50 px-4 py-2 text-sm`}
         >
-          <img src={tech.logo} alt={tech.name} className="w-12" />
+          <img
+            loading="lazy"
+            src={tech.logo}
+            alt={tech.name}
+            className="w-12"
+          />
           <p>{tech.name}</p>
         </motion.div>
       ))}

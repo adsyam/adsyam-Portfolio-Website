@@ -1,4 +1,5 @@
 import nukt from "./Nukt.png";
-import wild_oasis from './Wild Oasis.png'
+import Pizzaria from "./Pizzaria.png";
+import wild_oasis from "./Wild Oasis.png";
 
-export { nukt, wild_oasis };
+export { Pizzaria, nukt, wild_oasis };

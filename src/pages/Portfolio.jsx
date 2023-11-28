@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { HiExternalLink } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import { nukt, wild_oasis } from "../assets/projects";
+import { nukt, wild_oasis, Pizzaria } from "../assets/projects";
 import {
   CSS,
   Firebase,
@@ -12,6 +12,7 @@ import {
   PHP,
   React,
   React_Query,
+  Redux,
   Styled,
   Tailwind,
 } from "../assets/stacks";
@@ -19,6 +20,7 @@ import StackArray from "../components/ui/StackArray";
 
 const nuktArr = [HTML, CSS, JS, React, Tailwind, Firebase, Framer];
 const WildOasisArr = [HTML, CSS, JS, React, React_Query, Styled, PHP, Laravel];
+const PizzariaArr = [HTML, CSS, JS, React, Redux, Tailwind];
 
 export default function Portfolio() {
   return (
@@ -76,7 +78,7 @@ export default function Portfolio() {
           <StackArray array={nuktArr} />
         </div>
       </div>
-
+      {/* ========================================================= */}
       <div className="flex w-full gap-4">
         <Link
           to={""}
@@ -97,7 +99,9 @@ export default function Portfolio() {
           />
         </Link>
         <div className="flex w-[60vw] flex-col gap-2">
-          <h1 className="text-4xl font-bold">Wild Oasis</h1>
+          <h1 className="text-4xl font-bold">
+            Wild Oasis <span className="text-sm">(current)</span>
+          </h1>
           <hr />
           <p className="font font-extralight">
             A Hotel Management System boasting a comprehensive array of
@@ -128,6 +132,60 @@ export default function Portfolio() {
           </motion.div>
           <p>Technology Used:</p>
           <StackArray array={WildOasisArr} />
+        </div>
+      </div>
+      {/* ========================================================= */}
+      <div className="flex w-full gap-4">
+        <Link
+          to={"https://pizzaria-adsyam.vercel.app/"}
+          target="_blank"
+          className="w-[40vw]"
+        >
+          <motion.img
+            whileHover={{ scale: 1.01 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 10,
+            }}
+            loading="lazy"
+            src={Pizzaria}
+            alt="Nukt Preview Website"
+            className="rounded-lg border-2 border-purple-300/50"
+          />
+        </Link>
+        <div className="flex w-[60vw] flex-col gap-2">
+          <h1 className="text-4xl font-bold">
+            Pizzaria <span className="text-sm">(done)</span>
+          </h1>
+          <hr />
+          <p className="font font-extralight">
+            A Domino&#39;s-style pizza ordering app that allows users to place,
+            track, and prioritize orders seamlessly, all without the need for
+            user authentication.
+          </p>
+          <motion.div whileHover={{ x: 10 }}>
+            <Link
+              to={"https://github.com/adsyam/Pizzaria"}
+              target="_blank"
+              className="flex items-center gap-1"
+            >
+              <p>Github Repo</p>
+              <HiExternalLink />
+            </Link>
+          </motion.div>
+          <motion.div whileHover={{ x: 10 }}>
+            <Link
+              to={"https://pizzaria-adsyam.vercel.app/"}
+              target="_blank"
+              className="flex items-center gap-1"
+            >
+              <p>Live Link</p>
+              <HiExternalLink />
+            </Link>
+          </motion.div>
+          <p>Technology Used:</p>
+          <StackArray array={PizzariaArr} />
         </div>
       </div>
     </div>

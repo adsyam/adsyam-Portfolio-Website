@@ -13,7 +13,7 @@ import Git from "./git.svg";
 import Github from "./github.svg";
 import Laravel from "./laravel.svg";
 import Mysql from "./mysql.svg";
-import Redux from "./redux.svg";
+import Redux from "./Redux.svg";
 import Styled from "./styledcomponents.svg";
 
 export {

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import {
   Bootstrap,
@@ -95,6 +96,7 @@ const toolsArr = [
 ];
 
 export default function AboutLogos() {
+  const [hoveredLogo, setHoveredLogo] = useState(null);
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -104,8 +106,12 @@ export default function AboutLogos() {
         {toolsArr.map((tech, i) => (
           <motion.div
             whileHover={{ scale: 1.02 }}
+            onMouseEnter={() => setHoveredLogo(i)}
+            onMouseLeave={() => setHoveredLogo(null)}
             key={i}
-            className="flex items-center gap-2 rounded-lg border border-stone-500 px-4 py-2 text-sm"
+            className={`${
+              hoveredLogo === i ? "logo" : ""
+            } flex items-center gap-2 rounded-lg border-2 border-purple-300/50 px-4 py-2 text-sm`}
           >
             <img src={tech.logo} alt={tech.name} className="w-12" />
             <p>{tech.name}</p>
@@ -119,8 +125,12 @@ export default function AboutLogos() {
       {techstackArr.map((tech, i) => (
         <motion.div
           whileHover={{ scale: 1.02 }}
+          onMouseEnter={() => setHoveredLogo(i)}
+          onMouseLeave={() => setHoveredLogo(null)}
           key={i}
-          className="flex items-center gap-2 rounded-lg border border-stone-500 px-4 py-2 text-sm"
+          className={`${
+            hoveredLogo === i ? "logo" : ""
+          } flex items-center gap-2 rounded-lg border-2 border-purple-300/50 px-4 py-2 text-sm`}
         >
           <img src={tech.logo} alt={tech.name} className="w-12" />
           <p>{tech.name}</p>

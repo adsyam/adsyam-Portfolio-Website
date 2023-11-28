@@ -1,10 +1,11 @@
+import { HomeAnimation } from "../assets";
 
 export default function Home() {
   return (
     <div>
       <div className="mt-[-20px] grid grid-cols-2">
         <img
-          src="/public/HomeAnimation.svg"
+          src={HomeAnimation}
           alt="Home Page Animation"
           className="m-auto h-screen"
         />

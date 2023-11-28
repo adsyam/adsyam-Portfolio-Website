@@ -4,7 +4,7 @@ export default function Home() {
     <div>
       <div className="mt-[-20px] grid grid-cols-2">
         <img
-          src="../../public/HomeAnimation.svg"
+          src="/public/HomeAnimation.svg"
           alt="Home Page Animation"
           className="m-auto h-screen"
         />

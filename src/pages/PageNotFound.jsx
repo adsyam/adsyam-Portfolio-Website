@@ -5,7 +5,7 @@ export default function PageNotFound() {
   return (
     <div>
       <img
-        src="../../public/Error404-third.svg"
+        src="/public/Error404-third.svg"
         alt=""
         className="m-auto h-screen"
       />

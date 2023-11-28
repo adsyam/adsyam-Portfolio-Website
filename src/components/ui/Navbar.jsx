@@ -7,7 +7,7 @@ export default function Navbar() {
       <Link to={"/home"} className="text-xl font-semibold text-stone-200">
         Yambao_dev
       </Link>
-      <ul className="flex gap-4 text-lg font-semibold text-stone-200">
+      <ul className="flex gap-4 text-lg font-normal text-stone-200">
         <li className="">
           <NavLink to={"/home"} className="nav-selection">
             Home

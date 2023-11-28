@@ -4,11 +4,11 @@ import { Astronaut } from "../../../assets/index";
 
 export default function AboutMe() {
   return (
-    <div className="mb-12 rounded-2xl border-2 bg-[#e4e4e7] p-5">
-      <p className="about-header text-2xl font-bold text-stone-900">About Me</p>
+    <div className="mb-12 rounded-2xl border-2 border-stone-100/10 bg-[#e4e4e710] p-5">
+      <p className="about-header text-2xl font-bold text-stone-300">About Me</p>
       <div className="flex">
         <img src={Astronaut} alt="Astronaut" className="h-[60vh]" />
-        <div className="font-Mulish mr-16 text-xl font-semibold text-stone-900">
+        <div className="font-Mulish mr-16 text-xl font-thin text-stone-100">
           <h2>
             Greetings! I&#39;m Adrianne Yambao, a passionate Full-Stack
             Developer based in Antipolo, Rizal. Proficient in{" "}

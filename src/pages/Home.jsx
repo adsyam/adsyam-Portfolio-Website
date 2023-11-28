@@ -1,3 +1,4 @@
+import { TypeAnimation } from "react-type-animation";
 import { HomeAnimation } from "../assets";
 
 export default function Home() {
@@ -12,7 +13,12 @@ export default function Home() {
         <div className="flex flex-col justify-center gap-3">
           <p className="text-4xl font-bold">Hi, Im</p>
           <p className="text-4xl font-bold">Adrianne Yambao</p>
-          <p className="typewriter text-3xl">A Full-Stack Web Developer.</p>
+          <TypeAnimation
+            sequence={["A Full-Stack Web Developer.", 1000]}
+            style={{ fontSize: "1.875rem", lineHeight: "2.25rem", letterSpacing: "0.1em" }}
+            speed={30}
+            repeat={Infinity}
+          />
         </div>
       </div>
     </div>

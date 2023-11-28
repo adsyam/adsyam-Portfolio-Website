@@ -105,7 +105,7 @@ export default function AboutLogos() {
           <motion.div
             whileHover={{ scale: 1.02 }}
             key={i}
-            className="flex items-center gap-2 rounded-lg border border-purple-500 px-4 py-2 text-sm"
+            className="flex items-center gap-2 rounded-lg border border-stone-500 px-4 py-2 text-sm"
           >
             <img src={tech.logo} alt={tech.name} className="w-12" />
             <p>{tech.name}</p>
@@ -120,7 +120,7 @@ export default function AboutLogos() {
         <motion.div
           whileHover={{ scale: 1.02 }}
           key={i}
-          className="flex items-center gap-2 rounded-lg border border-purple-500 px-4 py-2 text-sm"
+          className="flex items-center gap-2 rounded-lg border border-stone-500 px-4 py-2 text-sm"
         >
           <img src={tech.logo} alt={tech.name} className="w-12" />
           <p>{tech.name}</p>

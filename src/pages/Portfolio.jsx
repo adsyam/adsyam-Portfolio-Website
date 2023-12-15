@@ -1,26 +1,14 @@
 import { motion } from "framer-motion";
 import { HiExternalLink } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import { nukt, wild_oasis, Pizzaria } from "../assets/projects";
-import {
-  CSS,
-  Firebase,
-  Framer,
-  HTML,
-  JS,
-  Laravel,
-  PHP,
-  React,
-  React_Query,
-  Redux,
-  Styled,
-  Tailwind,
-} from "../assets/stacks";
+import { Pizzaria, nukt, wild_oasis } from "../assets/projects";
 import StackArray from "../components/ui/StackArray";
 
-const nuktArr = [HTML, CSS, JS, React, Tailwind, Firebase, Framer];
-const WildOasisArr = [HTML, CSS, JS, React, React_Query, Styled, PHP, Laravel];
-const PizzariaArr = [HTML, CSS, JS, React, Redux, Tailwind];
+const nuktArr = ["vscode-icons:file-type-html", "vscode-icons:file-type-css", "logos:javascript", "logos:react", "devicon:tailwindcss", "logos:firebase", "tdesign:logo-framer"];
+
+const WildOasisArr = ["vscode-icons:file-type-html", "vscode-icons:file-type-css", "logos:javascript", "logos:react", "logos:react-query-icon", "simple-icons:styledcomponents", "vscode-icons:file-type-node", "devicon:mysql"];
+
+const PizzariaArr = ["vscode-icons:file-type-html", "vscode-icons:file-type-css", "logos:javascript", "logos:react", "logos:redux", "devicon:tailwindcss"];
 
 export default function Portfolio() {
   return (

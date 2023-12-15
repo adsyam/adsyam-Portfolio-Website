@@ -14,7 +14,7 @@ export default function AboutMe() {
             Developer based in Antipolo, Rizal. Proficient in{" "}
             <TypeAnimation
               sequence={[
-                "HTML, CSS, JavaScript, TypeScript, ReactJS, PHP, Laravel, and MySQL.",
+                "HTML, CSS, JavaScript, TypeScript, ReactJS, NodeJS, Express, MongoDB and MySQL.",
                 100,
               ]}
               className="font-bold"
@@ -57,7 +57,7 @@ export default function AboutMe() {
             <p>
               • Currently building a Hotel Management System with{" "}
               <span className="font-bold">ReactJS</span> for the frontend,{" "}
-              <span className="font-bold">Laravel</span> for the backend, and{" "}
+              <span className="font-bold">NodeJS Express</span> for the backend, and{" "}
               <span className="font-bold">MySQL</span> for the database.
             </p>{" "}
             <p>

@@ -1,107 +1,110 @@
+import { Icon } from '@iconify/react';
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import {
-  Bootstrap,
-  CSS,
-  Figma,
-  Firebase,
-  Framer,
-  Git,
-  Github,
-  HTML,
-  JavaScript,
-  Laravel,
-  Mysql,
-  PHP,
-  React,
-  React_Query,
-  Redux,
-  Styled,
-  Supabase,
-  Tailwind,
-  TypeScript,
+    Figma,
+    Framer,
+    Github,
+    React,
+    React_Query,
+    Redux,
+    Styled
 } from "../../../assets/stacks";
 
 const techstackArr = [
   {
     name: "HTML",
-    logo: HTML,
+    logo: "vscode-icons:file-type-html",
   },
   {
     name: "CSS",
-    logo: CSS,
+    logo: "vscode-icons:file-type-css",
   },
   {
     name: "JavaScript",
-    logo: JavaScript,
+    logo: "logos:javascript",
   },
   {
     name: "TypeScript",
-    logo: TypeScript,
-  },
-  {
-    name: "Bootstrap",
-    logo: Bootstrap,
-  },
-  {
-    name: "Tailwind CSS",
-    logo: Tailwind,
-  },
-  {
-    name: "React",
-    logo: React,
+    logo: "devicon:typescript",
   },
   {
     name: "PHP",
-    logo: PHP,
+    logo: "devicon:php",
   },
   {
-    name: "Laravel",
-    logo: Laravel,
+    name: "Bootstrap",
+    logo: "devicon:bootstrap",
+  },
+  
+  {
+    name: "Tailwind CSS",
+    logo: "devicon:tailwindcss",
+  },
+  {
+    name: "React",
+    logo: "logos:react",
+  },
+  {
+    name: "NodeJS",
+    logo: "vscode-icons:file-type-node",
+  },
+  {
+    name: "Express",
+    logo: "skill-icons:expressjs-light",
+  },
+  {
+    name: "MongoDB",
+    logo: "skill-icons:mongodb",
   },
   {
     name: "MySQL",
-    logo: Mysql,
+    logo: "devicon:mysql",
   },
   {
+    name: "Laravel",
+    logo: "logos:laravel",
+  },
+  
+  {
     name: "Firebase",
-    logo: Firebase,
+    logo: "logos:firebase",
   },
   {
     name: "Supabase",
-    logo: Supabase,
+    logo: "devicon:supabase",
   },
 ];
 
 const toolsArr = [
   {
     name: "Git",
-    logo: Git,
+    logo: "devicon:git",
   },
   {
     name: "Github",
-    logo: Github,
+    logo: "bi:github",
   },
   {
     name: "Figma",
-    logo: Figma,
+    logo: "logos:figma",
   },
   {
     name: "Redux",
-    logo: Redux,
+    logo: "logos:redux",
   },
   {
     name: "React Query",
-    logo: React_Query,
+    logo: "logos:react-query-icon",
   },
   {
     name: "Framer Motion",
-    logo: Framer,
+    logo: "tdesign:logo-framer",
   },
   {
     name: "Styled Components",
-    logo: Styled,
+    logo: "simple-icons:styledcomponents",
   },
 ];
 
@@ -128,12 +131,7 @@ export default function AboutLogos() {
               hoveredLogo === i ? "logo" : ""
             } flex items-center gap-2 rounded-lg border-2 border-purple-300/50 px-4 py-2 text-sm`}
           >
-            <img
-              loading="lazy"
-              src={tech.logo}
-              alt={tech.name}
-              className="w-12"
-            />
+            <Icon icon={tech.logo} width="36" height="48" />
             <p>{tech.name}</p>
           </motion.div>
         ))}
@@ -157,12 +155,13 @@ export default function AboutLogos() {
             hoveredLogo === i ? "logo" : ""
           } flex items-center gap-2 rounded-lg border-2 border-purple-300/50 px-4 py-2 text-sm`}
         >
-          <img
+          {/* <img
             loading="lazy"
             src={tech.logo}
             alt={tech.name}
             className="w-12"
-          />
+          /> */}
+          <Icon icon={tech.logo} width="36" height="48" />
           <p>{tech.name}</p>
         </motion.div>
       ))}

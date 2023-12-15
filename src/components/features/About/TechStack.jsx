@@ -12,10 +12,10 @@ export default function TechStack() {
         <motion.div whileTap={{ scale: 1.1 }}>
           <Link
             to={"/about/techstack"}
-            className={`rounded-lg border-2 px-4 py-2 duration-300 hover:text-white ${
+            className={`rounded-lg border-2 px-4 py-2 duration-300 text-stone-300 ${
               pathname.includes("techstack")
-                ? "logo border-purple-300 bg-[#a855f750] text-purple-100"
-                : "border-purple-300/50 text-stone-300 "
+                ? "logo border-purple-300 bg-[#a855f750] text-stone-300"
+                : "border-purple-300/50 text-stone-300"
             }`}
           >
             Tech Stack
@@ -24,9 +24,9 @@ export default function TechStack() {
         <motion.div whileTap={{ scale: 1.1 }}>
           <Link
             to={"/about/tools"}
-            className={`rounded-lg border-2 px-4 py-2 duration-300 hover:text-white ${
+            className={`rounded-lg border-2 px-4 py-2 duration-300 text-white ${
               pathname.includes("tools")
-                ? "logo border-purple-300 bg-[#a855f750] text-purple-100"
+                ? "logo border-purple-300 bg-[#a855f750] text-stone-300"
                 : "border-purple-300/50 text-stone-300"
             }`}
           >

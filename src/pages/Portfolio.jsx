@@ -6,7 +6,7 @@ import StackArray from "../components/ui/StackArray";
 
 const nuktArr = ["vscode-icons:file-type-html", "vscode-icons:file-type-css", "logos:javascript", "logos:react", "devicon:tailwindcss", "logos:firebase", "tdesign:logo-framer"];
 
-const WildOasisArr = ["vscode-icons:file-type-html", "vscode-icons:file-type-css", "logos:javascript", "logos:react", "logos:react-query-icon", "simple-icons:styledcomponents", "vscode-icons:file-type-node", "devicon:mysql"];
+const WildOasisArr = ["vscode-icons:file-type-html", "vscode-icons:file-type-css", "logos:javascript", "logos:react", "logos:react-query-icon", "simple-icons:styledcomponents", "vscode-icons:file-type-node","skill-icons:expressjs-light", "devicon:mysql"];
 
 const PizzariaArr = ["vscode-icons:file-type-html", "vscode-icons:file-type-css", "logos:javascript", "logos:react", "logos:redux", "devicon:tailwindcss"];
 
